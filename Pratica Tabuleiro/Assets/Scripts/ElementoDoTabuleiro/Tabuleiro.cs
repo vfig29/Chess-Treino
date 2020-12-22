@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Tabuleiro
 {
-    public Celula[,] matrizPosicao = new Celula[8,8];//posicoes das celulas do tabuleiro.
+    public static int sizeX = 8;
+    public static int sizeY = 8;
+    public Celula[,] matrizPosicao = new Celula[sizeX, sizeY];//posicoes das celulas do tabuleiro.
 
     public Tabuleiro()
     {

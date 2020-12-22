@@ -11,6 +11,11 @@ public class Peao : Peça
 
     public override void Movimentacao()
     {
-        
+
+    }
+
+    public override void SetAttackLine()
+    {
+
     }
 }
