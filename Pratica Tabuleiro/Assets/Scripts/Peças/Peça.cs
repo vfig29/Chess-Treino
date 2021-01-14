@@ -8,7 +8,11 @@ public abstract class Peça : MonoBehaviour
     public List<Celula> attackLine;
     public Celula celulaAtual;
 
-    public abstract void Movimentacao();
+    public abstract void Movimentacao(int vlrX, int vlrY);
     public abstract void Ataque();
     public abstract void SetAttackLine(); // Existe  para determinar as casas ameaçadas pela peça.
+    public List<Celula> CheckAttackLine()
+    {
+        return this.attackLine;
+    }
 }
